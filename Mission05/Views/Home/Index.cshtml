@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Weightlifting Fan Site";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Below is my entire index page. Title & icon are up here -->
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="bumper.png">
+    <title>Weightlifting Fan Site</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+</head>
+
+<!-- This is obviously the header. It's in the calculator file too -->
+<header>
+    <h1>Welcome Weightlifting Enthusiasts!</h1>
+    <h5>This page is all about getting big and lifting large!</h5>
+    <nav>
+        <ul>
+            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a href="@Url.Action("Calculator", "Home")">Tutoring Calculator</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- The rubric says I need a few paragraphs about the hobby and at least two pictures. both those needs
+are met on this page below here -->
+<body>
+<p>Weightlifting is a sport enjoyed by millions across the globe. It began in the 19th century, with "lifting"
+becoming a recognized form of exercise in the late 1800s. The practice involves picking up and/or moving weights
+to contract the muscles. In so doing, the body promotes the growth of more muscle. In the 1900s, a branch of weightlifting
+called body building became more popular. The first well recognized face of body building was Arnold Schwarzenegger.</p>
+<img src="arnoldSchwarz.jpg" alt="Arnold Schwarzenegger"/>
+
+<p>With more time and science, records began to be broken. Not only were there competitions for the most weight
+lifted, but there were also competitions for best physique. In the 2000's one man excelled in both. Ronnie
+Coleman, a police officer in Texas, began breaking records in weightlifting. Known for his rowdy behavior in the gym,
+a video of him squatting 800 lbs has become well known in the industry. Ronnie also won 8 Mr. Olympia titles and earned the
+nickname "The King."</p>
+<img src="ronnieColeman.jpg" alt="Ronnie Coleman"/>
+
+<p>In the last few years weightlifting and body building have taken off. They are well known and heavily recommended
+forms of exercise. Science continues to enhance our knowledge of muscle mass, endurance, and strength. This era
+also has dominant figures. Chris Bumstead has won six consecutive Mr. Olympia titles spanning 2019-2024.</p>
+<img src="cBum.jpg" alt="Chris Bumstead"/>
+
+<!-- Footer with copyright stuff -->
+<footer style="text-align: center; padding: 10px; background-color: #333; color: white; position: fixed; bottom: 0; width: 100%;">
+    <p>&copy; 2025 Porter Graham. All Rights Reserved.</p>
+    <p>Built by Porter Graham | Contact: porterwg@byu.edu</p>
+</footer>
+
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

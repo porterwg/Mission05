@@ -1,0 +1,107 @@
+/* General Page Styling */
+body {
+    background-color: #1e1e1e; /* Dark gym-like background */
+    color: #f1f1f1; /* Light text for contrast */
+    font-family: "Impact", "Arial Black", sans-serif; /* Bold, gritty font */
+}
+
+/* Header Styling */
+header {
+    background-color: #222; /* Dark gray */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%; /* Ensures images don’t overflow */
+    height: auto; /* Keeps aspect ratio */
+    display: block;
+    margin: 10px auto; /* Centers images */
+    border-radius: 5px; /* Soft edges */
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #0d6efd; /* Gym-themed blue */
+    color: #222;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: #e6b800;
+}
+
+/* Forms */
+input, select {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+form {
+    background-color: #2a2a2a; /* Slightly lighter than page background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Soft shadow for contrast */
+    max-width: 400px;
+    margin: 20px auto; /* Centers form */
+}
+
+/* LABELS - Make text easier to read */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #f1f1f1; /* Light color for contrast */
+}
+
+/* TOTAL OUTPUT BOX */
+#total {
+    font-weight: bold;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: 1px solid #777;
+}
+
+a {
+    color: #0d6efd; /* Default link color */
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    color: #075ad5; /* Hover effect */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+a:visited {
+    color: #156cec; /* Color for visited links */
+}
+
+a:active {
+    color: #0d6efd; /* Color when the link is actively clicked */
+}

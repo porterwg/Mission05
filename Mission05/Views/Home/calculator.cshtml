@@ -1,0 +1,47 @@
+@{
+    ViewData["Title"] = "Tutoring Calculator";
+}
+<!-- This is all the code for the calculator page. The java//jQuery is in the calculator.js file in my
+wwwroot file. this all works as you'll see :) -->
+
+<h2>Tutoring Cost Calculator</h2>
+<header>
+    <h1>Welcome Weightlifting Enthusiasts!</h1>
+    <h5>This page helps you estimate how much I'd charge to tutor you on this hobby.</h5>
+    <nav>
+        <ul>
+            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a href="@Url.Action("Calculator", "Home")">Tutoring Calculator</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div>
+    <label for="hours">Number of Hours:</label>
+    <input type="number" id="hours" min="1" required>
+</div>
+
+<div>
+    <label for="rate">Rate per Hour ($):</label>
+    <input type="text" id="rate" value="30" readonly>
+</div>
+
+<div>
+    <button id="calculateBtn">Calculate Total</button>
+</div>
+
+<div>
+    <label for="total">Total Cost ($):</label>
+    <input type="text" id="total" readonly>
+</div>
+
+<a href="@Url.Action("Index", "Home")">Back to Home</a>
+
+<footer style="text-align: center; padding: 10px; background-color: #333; color: white; position: fixed; bottom: 0; width: 100%;">
+    <p>&copy; 2025 Porter Graham. All Rights Reserved.</p>
+    <p>Built by Porter Graham | Contact: porterwg@byu.edu</p>
+</footer>
+
+<!-- Link to the JavaScript file -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/calculator.js"></script>
